@@ -1,0 +1,68 @@
+/*p1,html*/
+section {
+  background-color: red;
+  color: blue;
+}
+.transition:hover {
+  background-color: pink;
+  color: aquamarine;
+}
+.transition {
+  transition: 2s;
+  transition: color 2000ms; /*restriction that 2s only need apply for color */
+  transition: background-color calc(9s+1s);
+}
+
+.bgClip {
+  border: 2px solid rgb(1, 27, 3);
+  border-radius: 10px;
+  text-align: justify;
+  transition: 2s;
+  padding: 10px;
+  background-clip: content-box;
+  background-clip: padding-box;
+  background-clip: border-box;
+}
+.bgClip:hover {
+  border-radius: 50%;
+  text-align: center;
+}
+/*p3.html*/
+.common{
+    width: 400px;
+    height: 200px;
+    margin: 20px;
+    background-color: brown;
+    color:white;
+    transition: width 2s;
+}
+
+.common:hover{
+    width: 100px;
+    background-color: orange;
+}
+#d1{
+    transition-timing-function: linear;/*cubic-bezier(0,0,1,1)*/
+}
+#d2{
+    transition-timing-function: ease-in;/*cubic-bezier(0.42,0,1,1)*/
+/*starts slowly*/
+}
+#d3{
+    transition-timing-function: ease-out;/*cubic-bezier(0,0,0.58,1)*/
+/*ends slowly*/
+}
+#d3{
+    transition-timing-function: ease;/*cubic-bezier(0.25,0.1,0.25,1)*/
+/*starts slow, ends slow*/
+  }
+#d4{
+    transition-timing-function: ease-in-out;/*cubic-bezier(0.42,0,0.58,1)*/
+/*start slow then fast and end slow*/
+  }
+#d5{
+    transition-timing-function: steps(3, start);/*jump-start, jump-end, end-start, end-jump, both, jump-none*/
+}
+#d6{
+    transition-timing-function: cubic-bezier(0.5,0.7,0.8,0.1);/*cubic-bezier(0,0,1,1)*/
+}

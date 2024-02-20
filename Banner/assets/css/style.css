@@ -1,0 +1,129 @@
+/*p1.html*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background-color: red;
+}
+header > nav > img {
+  height: 64px;
+}
+header > nav > ul {
+  list-style-type: none;
+  float: right;
+}
+header > nav > ul > li {
+  display: inline-block;
+  padding: 20px;
+}
+header > nav > ul > li > a {
+  color: white;
+  text-decoration: none;
+}
+header > nav > ul > li > a:hover {
+  color: green;
+}
+
+/*p2.html*/
+/*mobile*/
+.commonBanner {
+  height: 400px;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.commonBanner > div {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  line-height: 2;
+  display: inline-block;
+  box-shadow: -3px -3px 10px black, 3px 3px 10px black;
+}
+.commonBanner > div > h1 {
+  font-size: 60px;
+  text-shadow: -3px -3px 10px black, 3px 3px 10px black;
+}
+.banner1 {
+  background-color: blue;
+}
+
+/*p4.html*/
+.banner3 {
+  background: linear-gradient(to left, orange, red, blue);
+}
+
+/*p5.html*/
+.banner4 {
+  background: repeating-linear-gradient(45deg, orange, white 50%, green 80%);
+}
+
+/*p6.html*/
+.banner5 {
+  background: url("../images/image1.jpg") no-repeat left,
+    url("../images/game.jpg") no-repeat right;
+  background-size: 50%;
+}
+/*p7.html*/
+
+.banner6 {
+  background: linear-gradient(
+      rgb(255, 0, 0, 0.4),
+      rgb(0, 0, 255, 0.4),
+      rgba(224, 222, 217, 0.4)
+    ),
+    url("../images/game.jpg") no-repeat left,
+    url("../images/image1.jpg") no-repeat right;
+  background-size: 50%;
+}
+
+/*p8.html*/
+video {
+  position: fixed;
+  top: 40px;
+  left: 0;
+  z-index:-1;
+}
+.banner7{
+    z-index:1;
+}
+/*p9.html*/
+.banner8 {
+  background: -o-linear-gradient(red, green);
+  background: -moz-linear-gradient(blue, pink);
+
+  background: -webkit-linear-gradient(orange, grey);
+  background: linear-gradient(rgb(17, 255, 0), white);
+}
+/*p10.html*/
+.banner9 {
+  background-color: red;
+  text-align: center;
+  line-height: 2;
+}
+.common {
+  height: 400px;
+  width: 300px;
+  border: 2px solid grey;
+  margin: 30px;
+  padding: 20px;
+}
+.example-1 {
+  background: radial-gradient(orange, white, green);
+}
+.example-2 {
+  background: radial-gradient(circle, orange, white, green);
+}
+.example-3 {
+  background: radial-gradient(
+    circle farthest-side at bottom left,
+    orange,
+    white,
+    green
+  );
+}
+.example-4 {
+  background: repeating-radial-gradient(orange, white 10%, green 20%);
+}

@@ -1,0 +1,73 @@
+.fa-youtube {
+  color: red;
+  transition: 1s;
+  cursor: pointer;
+}
+.fa-youtube:hover {
+  color: pink;
+}
+.tooltip {
+  position: relative;
+}
+.tooltip > span {
+  background: grey;
+  color: rgb(52, 9, 9);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 0px green;
+  position: absolute;
+  top: 60px;
+  left: 200px;
+  display: none;
+}
+.tooltip:hover span{
+  display: block;
+}
+.tooltip:hover h1{
+  display: block;
+}
+.tooltip:hover p{
+  display: block;
+}
+.tooltip > span::before {
+  content: " ";
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent green transparent transparent;
+  position: absolute;
+  left: -21px;
+}
+
+.tooltip > span::after {
+  content: " ";
+ 
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent transparent green;
+  position: absolute;
+  left: 203px;
+}
+
+.tooltip >p {
+  width: 1px;
+  height: 1px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: green transparent transparent transparent;
+  position: absolute;
+  top:88px;
+  left: 290px;
+  display: none
+}
+
+.tooltip >h1 {
+  width: 1px;
+  height: 1px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent green transparent;
+  position: absolute;
+  top:18px;
+  left: 290px;
+  display: none;
+}

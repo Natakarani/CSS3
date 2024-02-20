@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  /* flex-direction: row;*/
+  /* flex-direction: column-reverse;*/
+  flex-direction: row;
+  /* flex-direction: column;*/
+  /*flex-wrap:wrap;*/
+  /*nowrap for to manage single line*/
+  /*wrap for to manage multiple lines*/
+  /*wrap-reverse for to reverse the wrap*/
+  flex-wrap: row wrap;
+  /*flex flow supports flex dircetion and flex wrap*/
+  column-gap: 20px;
+  row-gap: 20px;
+  gap: 20px; /*for row and column*/
+}
+.container > .item {
+  background-color: red;
+  /* padding: 20px;*/
+  padding: 20px;
+  margin: 20px;
+}
+
+/*p3.html*/
+.container1 {
+  justify-content: start;
+  justify-content: end;
+  justify-content: center; /*center*/
+  justify-content: flex-end; /*starts from starting*/
+  justify-content: flex-start; /*starts from ending*/
+  justify-content: space-around; /*same space around the full contents*/
+  justify-content: space-between; /*same space between the contents*/
+  justify-content: space-evenly; /*same space around and between the content */
+}
+
+/*p4.html*/
+.container2 {
+  border: 1px solid blue;
+  height: 400px;
+  align-items: center;
+  /*flex-start, flex-end, start, end(flex-start and start, flex-end and end are same)*/
+  align-content: flex-end;
+  /*flex-start, space-between , space-around, space-evenly*/
+}
+.container2 > .item {
+  height: 50px;
+}
+/*p5.html*/
+.container3 > .item {
+  width: 300px;
+  height: 200px;
+  flex: 1; /*width is normal*/
+}
+.container3 > .item:first-child {
+  flex: 2; /*width is double*/
+}
+/*p6.html*/
+.container4 {
+  flex-wrap: nowrap;
+}
+.container4 > .item {
+  flex-shrink: 1;
+}
+.container4 > .item:first-child {
+  flex-shrink: 5; /*width gets decreased*/
+}
+.container4 > .item:last-child {
+  flex-shrink: 9; /*width gets decreased*/
+}
+/*p7.html*/
+.container5 > .item:first-child {
+  order: 3;
+}
+.container5 > .item:nth-child(2) {
+  order: 1;
+}
+.container5 > .item:last-child {
+  order: 2;
+}
+/*p8.html*/
+.container8 {
+  height: 400px;
+  border: 2px solid blue;
+  justify-content: center;
+  align-items: center;
+}
+.container8 > .item {
+  height: 100px;
+}
+.container8 > .item:first-child {
+  font-size: 10px;
+  align-self: flex-start;
+}
+.container8 > .item:nth-child(2) {
+  font-size: 20px;
+}
+.container8 > .item:last-child {
+  font-size: 30px;
+  align-self: flex-end;
+}

@@ -1,0 +1,101 @@
+/*p1.html*/
+/*mobile version*/
+@media (max-width: 768px) {
+  header {
+    background-color: blue;
+    padding: 20px;
+  }
+  header > nav {
+    text-align: center;
+  }
+  header > nav > ul {
+    float: none;
+  }
+  header > nav > ul > li {
+    display: block;
+  }
+}
+/*tablet version*/
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  header {
+    background-color: grey;
+    padding: 20px;
+  }
+  header > nav {
+    text-align: center;
+  }
+  header > nav > ul {
+    float: none;
+  }
+}
+
+/*p2.html*/
+/*mobile version*/
+@media (max-width: 768px) {
+  header {
+    background-color: orange;
+  }
+  .banner1 {
+    background-color: pink;
+  }
+}
+
+/*tab version*/
+@media (min-width: 768px) and (max-width: 1200px) {
+  .banner1 {
+    background-color: green;
+  }
+}
+
+/*p3.html*/
+.banner2 {
+  background-image: url("../images/time.jpg");
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .banner2 {
+    background-image: url("../images/game.jpg");
+  }
+}
+
+/*p4.html*/
+@media (max-width: 768px) {
+  .banner3 {
+    background: linear-gradient(to bottom, pink, white, green);
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .banner3 {
+    background: linear-gradient(to top, brown, black);
+  }
+}
+
+/*p5.html*/
+@media (max-width: 768px) {
+  .banner4 {
+    background: repeating-linear-gradient(to bottom left, blue, white 80%, red);
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .banner4 {
+    background: repeating-linear-gradient(40deg, brown, black 40%);
+  }
+}
+
+/*p6.html*/
+@media (max-width: 768px) {
+    .banner5{
+        background:url("../images/time.jpg") no-repeat left, url("../images/game.jpg") no-repeat right;
+    background-size: 80%;
+    }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .banner5 {
+    background: url("../images/image2.jpg"),
+      no-repeat left url("../images/image1.jpg") no-repeat bottom;
+      background-size: 30%;
+  }
+}
+
+
